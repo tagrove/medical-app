@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medapp.ScreenOptionsController">
+   <children>
+      <Button layoutX="163.0" layoutY="226.0" mnemonicParsing="false" text="Options Option 1" />
+      <Button layoutX="163.0" layoutY="274.0" mnemonicParsing="false" text="Options Option 2" />
+      <Button layoutX="163.0" layoutY="322.0" mnemonicParsing="false" text="Options Option 3" />
+      <Button layoutX="163.0" layoutY="367.0" mnemonicParsing="false" text="Options Option 4" />
+      <Button layoutX="169.0" layoutY="594.0" mnemonicParsing="false" onAction="#mainButtonAction" text="Back to Home" />
+   </children>
+</AnchorPane>

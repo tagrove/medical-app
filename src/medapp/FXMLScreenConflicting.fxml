@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="450.0" minHeight="800.0" minWidth="550.0" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medapp.ScreenConflictingController">
+   <children>
+      <Button fx:id="button" layoutX="225.0" layoutY="721.0" onAction="#mainButtonAction" prefHeight="50.0" prefWidth="100.0" text="Back">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Label layoutX="215.0" layoutY="41.0" text="Conflicting Label" />
+      <TextField fx:id="textField2" layoutX="143.0" layoutY="87.0" prefHeight="50.0" prefWidth="265.0" promptText="Medication 1" />
+      <TextField fx:id="textField1" layoutX="143.0" layoutY="155.0" prefHeight="50.0" prefWidth="265.0" promptText="Medication 2" />
+      <Button layoutX="168.0" layoutY="240.0" mnemonicParsing="false" onAction="#searchForConflicting" prefHeight="75.0" prefWidth="215.0" text="Search for Conflicts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="resultsField" layoutX="59.0" layoutY="340.0" prefHeight="351.0" prefWidth="433.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="800.0" maxWidth="550.0" minHeight="800.0" minWidth="550.0" prefHeight="800.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medapp.ScreenOptionsController">
+   <children>
+      <Button fx:id="button" layoutX="225.0" layoutY="721.0" onAction="#mainButtonAction" prefHeight="50.0" prefWidth="100.0" text="Back">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button layoutX="125.0" layoutY="88.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Options Option 1">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="125.0" layoutY="212.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Options Option 2">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="125.0" layoutY="336.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Options Option 3">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="126.0" layoutY="459.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Options Option 4">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Label layoutX="232.0" layoutY="45.0" text="Options label" />
+   </children>
+</AnchorPane>

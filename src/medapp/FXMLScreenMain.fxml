@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="800.0" maxWidth="550.0" minHeight="800.0" minWidth="550.0" prefHeight="800.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medapp.ScreenMainController">
+   <children>
+      <Button fx:id="button" layoutX="126.0" layoutY="721.0" onAction="#optionsButtonAction" prefHeight="50.0" prefWidth="100.0" text="Options">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button layoutX="125.0" layoutY="88.0" mnemonicParsing="false" onAction="#medicationsButtonAction" prefHeight="100.0" prefWidth="300.0" text="Medications">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="125.0" layoutY="212.0" mnemonicParsing="false" onAction="#conflictingButtonAction" prefHeight="100.0" prefWidth="300.0" text="Conflicting Medications">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="125.0" layoutY="336.0" mnemonicParsing="false" onAction="#symptomsButtonAction" prefHeight="100.0" prefWidth="300.0" text="Symptoms">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="126.0" layoutY="459.0" mnemonicParsing="false" onAction="#treatmentButtonAction" prefHeight="100.0" prefWidth="300.0" text="Treatment">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button layoutX="126.0" layoutY="583.0" mnemonicParsing="false" onAction="#sideeffectsButtonAction" prefHeight="100.0" prefWidth="300.0" text="Side Effects">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Label layoutX="216.0" layoutY="43.0" text="Main Screen Label" />
+      <Button fx:id="button1" layoutX="325.0" layoutY="721.0" onAction="#loginButtonAction" prefHeight="50.0" prefWidth="100.0" text="Login">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>
