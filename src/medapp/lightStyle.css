@@ -1,0 +1,190 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 2, 2016, 12:13:31 PM
+    Author     : Terry
+*/
+
+.button {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-outer-border: black;
+    -fx-background-insets: 0 0 -1 0, 4, 1, 2;
+    -fx-background-radius: 5, 5, 4, 1;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+.button:focused {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-shadow-highlight-color: #ba9503;
+    -fx-outer-border: black;
+    // Change highlight Border
+    -fx-background-insets: 0 0 -1 0, 4, 4, 2;
+    -fx-background-radius: 5, 5, 4, 1;
+}
+.button:hover {
+    -fx-color: derive(-fx-hover-base,-15%);
+}
+
+.errorLabel{
+    -fx-text-fill: #f96161;
+}
+.root{
+    
+    
+    -fx-accent: #0093ff;
+    -fx-focus-color: blue;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Ariel";
+    -fx-base: lightgray;
+    -fx-background: white;
+    -fx-control-inner-background: white;
+    -fx-accent: #878891;
+    -fx-focus-color: #424242;
+    
+}
+.text-input {
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+}
+.text-field {
+    -fx-skin: "com.sun.javafx.scene.control.skin.TextFieldSkin";
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-text-box-border: gray;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+    -fx-padding: 3 5 3 5;
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-cursor: text;
+}
+/////////////////////////////////////////////
+
+.lightTextField{
+     -fx-skin: "com.sun.javafx.scene.control.skin.TextFieldSkin";
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-text-box-border: gray;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+    -fx-padding: 3 5 3 5;
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-cursor: text;  
+}
+.lightButton{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; 
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;  
+}
+.lightErrorLabel{
+   -fx-text-fill: #f96161;  
+   -fx-font-size: 12pt;
+}
+.lightLabel{
+    -fx-text-fill: black;
+    -fx-font-size: 12pt;
+}
+.lightBackground{
+    
+  -fx-accent: #0093ff;
+  -fx-focus-color: #424242;
+  -fx-font-size: 12pt;
+  -fx-font-family: "Ariel";
+  -fx-base: lightgray;
+  -fx-background: white;
+  -fx-control-inner-background: white;
+  -fx-accent: #878891;
+  //Border
+  -fx-content-display: top;
+  -fx-border-insets: 0 0 0 0;
+  -fx-border-color: yellow;
+  -fx-border-width: 4;
+
+}
+///////////////////////////////////////////////////////////////////
+
+.darkButton{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;    
+}
+.darkButton:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+}
+.darkErrorLabel{
+   -fx-text-fill: #f96161;  
+   -fx-font-size: 12pt;
+}
+.darkLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+.darkBackground{
+  //Border
+  -fx-content-display: top;
+  -fx-border-insets: 0 0 0 0;
+  -fx-border-color: silver;
+  -fx-border-width: 3;
+  -fx-base: #545456;
+  -fx-background-color: #303030;
+  -fx-accent: #0093ff;
+  -fx-font-size: 12pt;
+  -fx-font-family: "Ariel";
+  -fx-base: #545456;
+  -fx-background: #303030;
+  -fx-control-inner-background: lightgray;
+  -fx-focus-color: #0093ff; 
+}
+
+.cbButton{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;    
+}
+.cbButton:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+}
+.cbErrorLabel{
+   -fx-text-fill: #f96161;  
+   -fx-font-size: 12pt;
+}
+.cbLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+.cbBackground{
+    -fx-background: derive(#0e9cee, -70%);
+    //Border
+    -fx-content-display: top;
+    -fx-border-insets: 0 0 0 0;
+    -fx-border-color: silver;
+    -fx-border-width: 3;
+    -fx-base: #545456;
+    -fx-accent: #0093ff;
+    -fx-base: #545456;
+    -fx-background-color: derive(#0e9cee, -70%);
+    -fx-base: derive(orange, -20%);
+    -fx-focus-color: white;
+    -fx-prompt-text-fill: derive(black,+30%); 
+}

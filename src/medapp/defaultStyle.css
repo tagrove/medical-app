@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 2, 2016, 12:11:48 PM
+    Author     : Terry
+*/
+
+.button {
+   
+    -fx-background-color: #7b7d7f
+;
+    //-fx-background-color: linear-gradient(#585858, b8b8b8);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Ariel";
+
+}
+
+
+.otherbutton{
+    -fx-text-fill: rgb(49, 89, 23);
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+    -fx-background-color: linear-gradient(#dc9656, #ab4642);
+}
+
+.label{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Ariel";
+    -fx-text-fill: #000000;
+}
+
+.errorLabel{
+    -fx-text-fill: #ff6060;
+    
+}
+
+
+.root{
+    
+    -fx-font-size: 12pt;
+    -fx-font-family: "Courier New";
+    -fx-base: lightblue;
+    -fx-background-color: lightgray;
+}
+
+
+.darkButton{
+    -fx-color: white;
+    //-fx-background-color: #3f3f3f;
+    -fx-background-color: darkgray;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 8pt;
+    -fx-font-family: "Ariel";
+    
+    
+
+}
+.darkErrorLabel{
+   //-fx-text-fill: #f96161;  
+   -fx-font-size: 12pt;
+   -fx-font-color: yellow;
+   -fx-text-fill: purple;
+   -fx-color: purple;
+}
+.darkLabel{
+    
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+.darkBackground{
+  //Border
+  -fx-content-display: top;
+  -fx-border-insets: 0 0 0 0;
+  -fx-background-color: black;
+  -fx-border-color: silver;
+  -fx-border-width: 3;
+    
+  -fx-font-size: 12pt;
+  -fx-font-family: "Ariel";
+  -fx-base: lightblue;
+  -fx-background-color: #303030;
+
+}

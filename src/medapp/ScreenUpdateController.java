@@ -15,7 +15,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -26,20 +25,14 @@ import javafx.stage.Stage;
  *
  * @author Terry
  */
-public class ScreenSideeffectsController implements Initializable {
-    @FXML TextField textField1 = new TextField();
-    @FXML TextField textField2 = new TextField();
-    @FXML TextField textField3 = new TextField();
-    @FXML TextArea resultsField = new TextArea();
-    @FXML Label errorLabel = new Label();
-    @FXML Button button123 = new Button();
+public class ScreenUpdateController implements Initializable {
+
+    @FXML private TextField textField = new TextField();
+    @FXML private TextArea resultsField = new TextArea();
+    @FXML private Label errorLabel = new Label();
     
     public void initialize(URL url, ResourceBundle rb) {
-       errorLabel.setVisible(false);
-       resultsField.setEditable(false);
-       errorLabel.getStyleClass().add("errorLabel");
-       resultsField.setFocusTraversable(false);
-        
+    
     }    
     
   @FXML  
@@ -56,27 +49,4 @@ public class ScreenSideeffectsController implements Initializable {
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
-      
- 
-  @FXML 
-      
-  private void searchButtonAction(ActionEvent event) throws IOException {
-      
-      String sideeffect1 = textField1.getText();
-      String sideeffect2 = textField2.getText();
-      String sideeffect3 = textField3.getText();
-      resultsField.setText("");
-      if (sideeffect1.isEmpty() && sideeffect2.isEmpty() && sideeffect3.isEmpty()){
-          errorLabel.setVisible(true);
-      }else {
-      if (errorLabel.isVisible() == true){
-          errorLabel.setVisible(false);
-      }
-      String results = "Results for: " + sideeffect1 + " " + sideeffect2 + " "+ sideeffect3;
-      resultsField.setText(results);
-      }  
-    
-    
-    
-  }
 }
