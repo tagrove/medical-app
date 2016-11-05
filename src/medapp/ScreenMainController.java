@@ -33,25 +33,53 @@ public class ScreenMainController implements Initializable {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenOptions.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+  
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     @FXML
     private void medicationsButtonAction(ActionEvent event) throws IOException {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenMedications.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+        
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
+        
+        
+        
+        
     }
     @FXML
     private void conflictingButtonAction(ActionEvent event) throws IOException {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenConflicting.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+        
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
@@ -60,7 +88,12 @@ public class ScreenMainController implements Initializable {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenSideeffects.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+        
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
@@ -69,7 +102,12 @@ public class ScreenMainController implements Initializable {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenTreatments.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+                
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
@@ -78,7 +116,12 @@ public class ScreenMainController implements Initializable {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenSymptoms.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+                
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
@@ -87,7 +130,12 @@ public class ScreenMainController implements Initializable {
         Parent home_page_parent = FXMLLoader.load(getClass().getResource("FXMLScreenLogin.fxml"));
         Scene home_page_scene = new Scene(home_page_parent); 
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        //app_stage.setTitle("E-EMT");
+                
+        Scene otherScene = (Scene) ((Node) event.getSource()).getScene();
+        String style = otherScene.getStylesheets().toString();
+        style = style.replace("[", "");
+        style = style.replace("]", "");
+        home_page_scene.getStylesheets().add(style);
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
