@@ -51,18 +51,22 @@ public class ScreenLoginController implements Initializable {
         errorLabel.setVisible(false);
         
         signupErrorLabel.setVisible(false);
-        
+        signupErrorLabel.setFont(new Font("Arial", 11));
         
         newUserFieldError.setVisible(false);
+        newUserFieldError.setFont(new Font("Arial", 11));
         
         
         passwordConfirmError.setVisible(false);
+        passwordConfirmError.setFont(new Font("Arial", 11));
         
         
         newPasswordFieldError.setVisible(false);
+        newPasswordFieldError.setFont(new Font("Arial", 11));
         
         
         emailError.setVisible(false);        
+        emailError.setFont(new Font("Arial", 11));
         
         
         errorLabel.getStyleClass().add("errorLabel");
