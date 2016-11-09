@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
@@ -48,12 +49,24 @@ public class ScreenLoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         errorLabel.setVisible(false);
+        
         signupErrorLabel.setVisible(false);
+        
+        
         newUserFieldError.setVisible(false);
+        
+        
         passwordConfirmError.setVisible(false);
+        
+        
         newPasswordFieldError.setVisible(false);
+        
+        
         emailError.setVisible(false);        
+        
+        
         errorLabel.getStyleClass().add("errorLabel");
+        
         
     }    
     @FXML
