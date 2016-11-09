@@ -53,7 +53,7 @@ public class MedApp extends Application {
        updateArea.setPrefWidth(250);
 
        
-       String updateString = "Update Thing.\nUpdate Thing 2.\nUpdate Thing 3.";
+       String updateString = "Update:\n1. First item updated\n2. Second item updated\n3. Third item updated\n4. Fourth item updated";
        stage.setTitle("E-EMT");
        confirm = new Button("Okay");
        confirm.setLayoutX(100);

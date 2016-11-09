@@ -19,7 +19,6 @@
 }
 .errorLabel{
     -fx-text-fill: #f96161;
-    -fx-font-size:12pt;
 }
 
 .root{
