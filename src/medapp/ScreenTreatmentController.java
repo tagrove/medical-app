@@ -7,7 +7,13 @@ package medapp;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -57,7 +63,7 @@ public class ScreenTreatmentController implements Initializable {
     }
     
     @FXML 
-  private void searchButtonAction(ActionEvent event) throws IOException {
+  private void searchButtonAction(ActionEvent event) throws IOException, SQLException {
       
       String illness = textField.getText();
       System.out.println("Illness = " + illness);
@@ -70,8 +76,37 @@ public class ScreenTreatmentController implements Initializable {
           if (errorLabel.isVisible() == true){
                 errorLabel.setVisible(false);
             }
-        String results = "Results for: " + illness;
-        resultsField.setText(results);
+          
+        String host = "jdbc:mysql://localhost:3306/medical_app?verifyServerCertificate=false&useSSL=true";
+        String uName = "root";
+        String uPass= "csci490pass";
+        Connection con = DriverManager.getConnection(host, uName, uPass);
+        System.out.println("Working");
+        Statement stmt = con.createStatement(); 
+	ResultSet rs = stmt.executeQuery("select treatments from medical_app.illness where illnessName ='" + illness + "'");    
+	System.out.println("Results:\n\n");
+        String treatString = "";
+        //put the ResultSet into the string treatString
+	while (rs.next()) {
+            treatString = rs.getString("treatments");
+	}
+        String printList = "";
+        Scanner in = new Scanner(treatString).useDelimiter(", ");
+        //creates a string called treatList that capitalizes the first letter of each treatment
+        //then creates a string called printList that has a numbered list of each treatment
+    	for(int i = 1;in.hasNext(); i++){
+    		String treatList = in.next();
+    		treatList = treatList.substring(0, 1).toUpperCase() + treatList.substring(1);
+    		System.out.println(i + ". " + treatList);
+    		printList = printList + i + ". " + treatList + "\n";
+    	}    
+        //if the results from the query are empty then the illness is not in the database
+        if(printList.equals("")){
+            System.out.println("No treatments for illness " + illness);
+            resultsField.setText("No treatments for illness " + illness);
+        }else{
+            resultsField.setText(printList);
+        }
       }  
     }
 }
